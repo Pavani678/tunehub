@@ -3,15 +3,88 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+.grid-container {
+    display: flex;
+     padding-top:5%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+   
+   
+    
+}  
+.a{
+ border-radius:25px;
+ 
+ width:400px;
+ height:200px;
+    text-align:center;
+ background-color:silver;
+ 
+ 
+color:black;
+opacity:70%;
+ }
+ 
+ 
+ h3{
+ color:black;
+ 
+ }
+ 
+ h1{
+ font-size:25px;
+ 
+ 
+ 
+ }
+ body{
+background:url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-color:black;
+
+
+
+ 
+ 
+ }
+
+p{
+font-size:20px;
+}
+</style>
 </head>
 <body>
-<h1>Admin Home</h1>
-<a href="newSong">Add a new song</a>
-<br/>
-<a href="viewSongs">View all songs</a>
-<br/>
-<a href="createPlaylist">Create PlayList</a>
-<br/>
-<a href="viewPlaylists">View all PlayLists</a>
+<br><br><br><br>
+<center><h1 style="color:blue;opcaity:70%;font-size:35px;">AdminHome</h1>
+<div class="grid-container">
+<div class="a">
+<h1><a href="newSong">Add a new song</a></h1>
+<p>we are passionate about music. Our mission is to provide a 
+platform that celebrates the diversity of musical expression.</p>
+</div>
+
+<div class="a">
+<h1><a href="viewSongs">View all songs</a></h1>
+<p>Customers can view songs and they can buy premium to 
+list their favorite songs with reasonable price.</p>
+</div>
+
+<div class="a">
+<h1><a href="createPlaylist">Create playlist</a></h1>
+<p>After buying the premium,customers can create their favorite list, and
+ they can add some more list of songs</p>
+</div>
+
+<div class="a">
+<h1><a href="viewPlaylists">View all playlists</a></h1>
+<p>Customer can view any song which can be present in melody world.</p>
+</div>
+
+</div>
+</center>
 </body>
 </html>

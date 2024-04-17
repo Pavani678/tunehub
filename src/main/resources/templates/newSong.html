@@ -3,26 +3,93 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+.form{
+
+	padding-top:20px;
+	padding-right:500px;
+	padding-left:500px;
+	
+	
+
+
+	}
+	.hey{
+
+	
+	border-radius:30px;
+	padding-top:10px;
+	padding-right:50px;
+	padding-left:50px;
+	
+	border-radius:25px;
+ 
+ width:300px;
+ height:200px;
+    text-align:center;
+ background-color:silver;
+ 
+ 
+color:deeppink;
+font-size:20px;
+opacity:90%;
+	
+	
+
+	}
+label{
+font-size:20px;
+
+}
+body{
+	background:url('https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_640.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: rgb(0, 191, 255);
+	    color: rgb(255, 255, 255);
+	    
+
+
+	}
+h1{
+padding-top:30px;
+
+
+	
+}
+</style>
 </head>
 <body>
+<center>
+<br><br>
+<h1 style="color:blue;">Add New Song</h1></center>
+<br><br>
+<div class="form">
+<center>
+<div class="hey">
 <form action="addSong" method="post">
 <label>Song Name : </label>
 <input type="text" name="name"></input>
-<br/>
+<br/><br>
 <label>Song Artist : </label>
 <input type="text" name="artist"></input>
-<br/>
+<br/><br>
 <label>Song Genre : </label>
 <input type="text" name="genre"></input>
-<br/>
-<label>Song Link : </label>
+<br/><br>
+<label>Song Link : </label>&nbsp;&nbsp;
 <input type="text" name="link"></input>
-<br/>
-<input type="submit" value="ADD SONG"/>
+</center>
+<br/><br>
+<center><input style="width:120px" type="submit" value="ADD SONG"/></center>
 
 
 
 
 </form>
+</div>
+</div>
 </body>
 </html>

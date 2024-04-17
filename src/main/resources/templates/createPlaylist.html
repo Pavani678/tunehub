@@ -3,18 +3,73 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+body{
+background: url('https://i.pinimg.com/originals/c6/c1/1d/c6c11d8ba0b9f26caf0a6a8ee3a3e78e.gif');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+
+
+
+
+}
+
+.form{
+
+padding-top:100px;
+padding-right:500px;
+padding-left:500px;
+color:black;
+
+
+}
+.hey{
+background-color:silver;
+opacity:90%;
+
+
+
+}
+.hey{
+
+width:370px;
+height:230px;
+border-radius:30px 30px 30px 30px;
+font-size:20px;
+
+
+
+}
+</style>
 </head>
 <body>
+<div class="form">
+
+
+<center>
+<br>
+<br>
+<p style="color:deeppink;font-size:30px">Creating Playlist</p></center>
+<div class="hey">
+<br>
 <form action="addPlaylist" method="post">
-<label>Playlist name: </label>
+&nbsp;&nbsp;&nbsp;&nbsp;<label>Playlist name: </label>
 <input type="text" name="name"/>
 <br>
-<div th:each="song:${songs}">
-<input type="checkbox" th:name="songs" th:value="${song.id}"/>
-<label th:text="${song.name}"></label>
+&nbsp;&nbsp;<div th:each="song:${songs}">
+&nbsp;&nbsp;<input type="checkbox" th:name="songs" th:value="${song.id}"/>
+&nbsp;&nbsp;<label th:text="${song.name}"></label>
+</div>
+<br><br><br><br>
+
+<center><input style="width:150px" type="submit" value="ADD PLAYLIST"></center>
+<br><br>
+</form>
+</div>
+<br><br>
 </div>
 
-<input type="submit" value="ADD PLAYLIST">
-</form>
 </body>
 </html>

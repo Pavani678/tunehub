@@ -1,13 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="ISO-8859-1">
 <title>Tune hub : HOME</title>
 <link rel="stylesheet" th:href="@{/Css/style.css}">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
+<style>
+img{
+image-rendering:pixelated;
+}
+.nav{
+	
+	background-color:darkpink;	
+	align:center;
+}	
+body{
+background: url('https://wallpaperset.com/w/full/b/3/d/5380.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+font-family:"Times New Roman", Times, serif;
+
+}
+.animate-charcter
+{
+   text-transform:uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    green 2%,
+    #44107a 29%,
+    deeppink 34%,
+    yellow 24%,
+    orange 67%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 80px;
+      padding-top:20%;
+      padding-bottom:5%;
+}
+marquee{
+behavior:alternate;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+    
+  }
+}
+
+</style>
 <body>
-<button><a href="login">LOGIN</a></button>
-<button><a href="registration">REGISTER</a></button>
+<nav class="nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Melodies</a>
+    </div>
+    <ul class="nav navbar-nav">
+ 
+      <li><a href="register" >REGISTER</a></li>
+      <li><a href="login">LOGIN</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+    <h5 class="animate-charcter">Welcome to melody World</h5>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

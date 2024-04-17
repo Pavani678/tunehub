@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+<link rel="stylesheet" th:href="@{/Css/style.css}">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+.form{
+
+	padding-top:30px;
+	padding-right:500px;
+	padding-left:500px;
+color:black;
+	}
+	.hey{
+	
+	border-radius:30px;
+	padding-top:50px;
+	padding-right:50px;
+	padding-left:50px;
+	padding-bottom:50px;
+	 border-radius:25px;
+ 
+ font-size:15px;
+ width:400px;
+ height:300px;
+ text-align:center;
+ background-color:silver;
+ color:black;
+opacity:80%;
+	
+
+	}
+h1{
+padding-top:40px;
+}
+	body{
+	background:url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: rgb(0, 191, 255);
+	    color:blue;	   
+	    
+
+
+	}
+</style>
+
+</head>
+<body>
+<center><h1>User Registration</h1></center>
+<center>
+<div class="form">
+<div class="hey">
+<form action="register" method="post">
+    <label>UserName: 
+    <input name="username" type="text"/></label>
+    <br>
+    <label>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input name="email" type="text"/>
+     <br>
+     
+    <label>Password:&nbsp;&nbsp;
+     <input name="password" type="password"/>
+     <br>
+     
+    <label>Gender:</label>
+    Male<input type="radio" name="gender" value="male"/>
+    Female<input type="radio" name="gender" value="female"/>
+    Other<input type="radio" name="gender" value="other"/>
+    
+    <br>
+    
+    <label>Role:
+    Admin<input type="radio" name="role" value="admin"/>
+    Customer<input type="radio" name="role" value="customer"/>
+    </label>
+    <br>
+    
+    <label>Address:</label>
+    <textarea name="address"></textarea></form>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+ <center><input type="submit" style="display: block; width:120px;"/></center>
+
+</div>
+</div>
+<br><br>
+</center>
+</body>
+</html>
